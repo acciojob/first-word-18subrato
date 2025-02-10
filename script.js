@@ -1,14 +1,15 @@
 function firstWord(s) {
-	s.trim();
-	s += ' ';
-	let word = '';
-	for(let t of s){
-		if(t !== ' '){
-			word += t;
-		} else {
-			return word;
-		}
-	}
+	str = str.trim();
+    
+  
+    let spaceIndex = str.indexOf(' ');
+    
+ 
+    if (spaceIndex === -1) {
+        return str;
+    }
+
+    return str.slice(0, spaceIndex);
 }
 
 // Do not change the code below
