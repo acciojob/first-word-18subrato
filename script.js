@@ -1,10 +1,9 @@
-function firstWord(s) {
+function firstWord(str) {
 	str = str.trim();
     
-  
+
     let spaceIndex = str.indexOf(' ');
-    
- 
+
     if (spaceIndex === -1) {
         return str;
     }
